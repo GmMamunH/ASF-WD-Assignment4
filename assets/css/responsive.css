@@ -1,0 +1,187 @@
+:root {
+  --menu-color: #828297;
+  --menu-hover-color: #00e5cc;
+  --heading-text-color: #060640;
+  --para-text-color: #9090a7;
+  --btn-text-color: #fff;
+  --btn-bg-color: #060640;
+  --bg-color: #fff;
+  --wrapper-bg-color: #ecf9ff;
+  --footer-bg-color: #060640;
+  /* ========= color end ============ */
+}
+/* ========== tab ============= */
+@media only screen and (max-width: 1024px) {
+}
+
+/* =========== mobile ================== */
+@media only screen and (max-width: 769px) {
+  /* ====== responsive ===== */
+  /* ====== responsive ===== */
+  input[type="checkbox"]:checked ~ .menu,
+  input[type="checkbox"]:checked ~ .close-menu {
+    display: block;
+  }
+  input[type="checkbox"]:checked ~ .open-menu {
+    display: none;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    color: var(--menu-hover-color);
+    font-size: 25px;
+    padding: 20px 0px;
+  }
+  .close-menu {
+    display: none;
+  }
+
+  /*======== responsive end ======= */
+
+  .wrapper .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .wrapper .header nav .logo {
+    order: 1;
+  }
+  .wrapper .header nav .main-menu {
+    order: 3;
+  }
+  .wrapper .header nav .auth {
+    order: 2;
+  }
+  .header .main-menu .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-color);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+    width: 50%;
+    overflow: auto;
+    right: 0%;
+    top: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .header nav .main-menu ul li {
+    padding-bottom: 20px;
+  }
+  .header nav .main-menu ul {
+    flex-direction: column;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes anim {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0%;
+    }
+  }
+  /* =========== main menu end ============ */
+  .wrapper .header nav .auth ul li:last-child a {
+    padding: 15px;
+  }
+
+  /* ==================== auth menu end ============== */
+  .wrapper .hero-area {
+    padding: 100px 10px 20px;
+    top: 100%;
+  }
+  .wrapper .hero-area .left-side {
+    width: 100%;
+  }
+  .wrapper .hero-area .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* ===================hero area ================= */
+  .work{
+    padding: 20px 0px;
+  }
+  .work .work-box {
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  /* =============== work end ============== */
+  .about{
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  .about .left-side{
+    width: 100%;
+    order: 2;
+  }
+  .about .left-side .ls-head h4 {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  
+  .about .right-side {
+    width: 100%;
+    order: 1;
+  }
+  /* =============about section end =========== */
+  .popular{
+    padding: 50px 10px;
+  }
+
+  .popular .single-pp-box{
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* =========== popular section end ======= */
+  .global {
+    padding: 50px 10px;
+  }
+
+  .global p{
+    margin: 10px 0px 0px;
+  }
+  /* ============= global section end ======== */
+
+  
+.newsletter .nl-container {
+  padding: 10px;
+  flex-direction: column;
+}
+
+.newsletter .nl-container .left-side h4 {
+  font-size: 35px;
+  padding: 0px 10px;
+}
+.newsletter .nl-container .left-side p {
+  margin: 20px 0px;
+  padding: 0px 10px;
+  text-align: justify;
+}
+
+
+.newsletter .nl-container .left-side .input-box input {
+  padding: 20px 10px;
+}
+
+.newsletter .nl-container .right-side{
+  margin-top: 20px;
+}
+/* ======== newsletter section end ========= */
+
+.footer .footer-box {
+  flex-direction: column;
+  padding: 80px 10px 27px;
+  text-align: center;
+  gap: 20px;
+}
+.copy-right {
+  background: #000020;
+  padding: 27px 20px;
+}
+}
