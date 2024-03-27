@@ -249,6 +249,7 @@ img {
 /* ================ hero area list side end ============= */
 .hero-area .right-side {
   width: 65%;
+  padding: 10px;
 }
 
 /* =============== hero area end =============== */
@@ -372,7 +373,7 @@ img {
 
 .about .right-side {
   width: 50%;
-  background-image: url(../images/about/man.png);
+  background-image: url(../images/newsletter/newsletter.jpg);
   background-position: right;
   background-repeat: no-repeat;
   height: 600px;
@@ -506,7 +507,7 @@ img {
 }
 
 .newsletter .nl-container .right-side .right-image {
-  background-image: url(../images/newsletter/newsletter.svg);
+  background-image: url(../images/newsletter/newsletter.jpg);
   background-repeat: no-repeat;
   background-position: center;
   width: 353px;
